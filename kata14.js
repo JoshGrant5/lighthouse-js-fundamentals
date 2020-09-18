@@ -3,7 +3,7 @@
 const urlDecode = function(text) {
   let item = ''; // placeholder for each item (both keys and values)
   let k = ''; // placeholder for keys
-  let v = ''; // placeholder for values 
+  let v = ''; // placeholder for values
   let pairs = {}; // object to be returned
   let space = false; // test condition for space characters
   for (let i = 0; i < text.length; i++) {
@@ -22,9 +22,9 @@ const urlDecode = function(text) {
     } else if (space) {
       if (text[i] === '0') {
         space = false;
-      } 
+      }
     } else {
-      item += text[i]; 
+      item += text[i];
     }
   }
   pairs[k] = item;

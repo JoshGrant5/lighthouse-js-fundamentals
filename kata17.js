@@ -3,10 +3,10 @@
 const blocksAway = function(directions) {
   let x = 0; // x-axis for position (west - or east +)
   let y = 0; // y-axis for position (north + or south -)
-  let compass = ''; // condition for direction moving 
+  let compass = ''; // condition for direction moving
   let turns = []; // placeholder for directions
   let blocks = []; // placeholder for number of blocks travelled
-  let coordinates = {}; // return value 
+  let coordinates = {}; // return value
 
   for (let i = 0; i < directions.length; i++) {
     if (i % 2 === 0) {
@@ -18,7 +18,7 @@ const blocksAway = function(directions) {
   
   // Determine what the first direction is to set the compass
   if (turns[0] === 'right') {
-    x += blocks[0]
+    x += blocks[0];
     compass = 'east';
   } else if (turns[0] === 'left') {
     x -= blocks[0];

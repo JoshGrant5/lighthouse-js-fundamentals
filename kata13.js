@@ -12,7 +12,7 @@ const makeCase = function(input, cases) {
   }
 
   while (checks > 0) {
-    let newString = ''; // placeholder for returned string 
+    let newString = ''; // placeholder for returned string
     for (let i = 0; i < phrase.length; i++) {
       if (style === 'camel') {
         if (phrase[i] === ' ') {

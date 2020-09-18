@@ -1,4 +1,4 @@
-// Generate multiplication table for the values from 1 to the provided number 
+// Generate multiplication table for the values from 1 to the provided number
 const multiplicationTable = function(maxValue) {
   let table = []; // placeholder for multiplication table
   for (let x = 1; x <= maxValue; x++) {

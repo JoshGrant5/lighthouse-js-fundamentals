@@ -9,7 +9,7 @@ const organizeInstructors = function(instructors) {
         students.push(x.name);
       }
     }
-    sorted[course] = students;   
+    sorted[course] = students;
   }
   return sorted;
 };

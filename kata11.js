@@ -4,8 +4,8 @@
 const calculateChange = function(total, cash) {
   let numbers = [2000, 1000, 500, 200, 100, 25, 10, 5, 1];
 
-  let options = {2000: 'twentyDollar', 1000: 'tenDollar', 500: 'fiveDollar', 200: 'twoDollar', 100: 'oneDollar', 25: 'quarter', 
-  10: 'dime', 5: 'nickel', 1: 'penny'}
+  let options = {2000: 'twentyDollar', 1000: 'tenDollar', 500: 'fiveDollar', 200: 'twoDollar', 100: 'oneDollar', 25: 'quarter',
+    10: 'dime', 5: 'nickel', 1: 'penny'};
   
   let amount = cash - total;
   let change = {}; // placeholder object for change to be given

@@ -3,19 +3,19 @@
 // Board represented by an 8 by 8 array, with a 1 representing a queen and a 0 representing an unoccupied space. No other pcs for this exercise
 const generateBoard = function(whiteQueen, blackQueen) {
   let board = [
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0]
   ];
   board[whiteQueen[0]][whiteQueen[1]] = 1;
   board[blackQueen[0]][blackQueen[1]] = 1;
   return board;
-}
+};
 
 const queenThreat = function(board) {
   let spot1 = [];
@@ -40,9 +40,9 @@ const queenThreat = function(board) {
   } else if (Math.abs(spot1[0] - spot1[1]) === Math.abs(spot2[0] - spot2[1])) {
     return true;
   } else {
-    return false; 
+    return false;
   }
-}
+};
 
 let whiteQueen = [0, 5];
 let blackQueen = [5, 0];

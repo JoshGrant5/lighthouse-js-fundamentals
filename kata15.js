@@ -5,7 +5,7 @@
 const squareCode = function(message) {
   let noSpaces = ''; // message once spaces are removed
   let text = {}; // object for storing text of each column
-  let code = []; // placeholder for final code to return 
+  let code = []; // placeholder for final code to return
   let counter = 1; // condition for creating columns based on column length
   for (let i = 0; i < message.length; i++) {
     if (message[i] !== ' ') {
@@ -15,7 +15,7 @@ const squareCode = function(message) {
   let columns = (Math.ceil(Math.sqrt(noSpaces.length)));
 
   for (let i = 1; i <= columns; i++) {
-    text[i] = ''; 
+    text[i] = '';
   }
   for (let i = 0; i < noSpaces.length; i++) {
     if (counter === columns + 1) {
@@ -30,7 +30,7 @@ const squareCode = function(message) {
   for (let i = 1; i <= columns; i++) {
     code.push(text[i]);
   }
-  output = code.join(' ');
+  let output = code.join(' ');
   return output;
 };
 

@@ -1,23 +1,23 @@
 // Return coordinates of available parking spots for vehicle. Return array with coordinates of spot, or return false if none available
 // Regular cars can only park in R spots, small cars in R or S spots, and motorcycles in R, S, or M spots
-// Uppercase spot means AVAILABLE, lowercase means UNAVAILABLE 
-const whereCanIPark = function (spots, vehicle) {
+// Uppercase spot means AVAILABLE, lowercase means UNAVAILABLE
+const whereCanIPark = function(spots, vehicle) {
   let coordinates = []; // placeholder for empty spot
-    for (let y = 0; y < spots.length; y++) {
-      for (let x = 0; x < spots.length; x++) {
-        if (vehicle === 'regular' && spots[y][x] === 'R') {
-          coordinates = [x, y];
-          return coordinates;
-        } else if (vehicle === 'small' && spots[y][x] === 'R' || vehicle === 'small' && spots[y][x] === 'S') {
-          coordinates = [x, y];
-          return coordinates;
-          } else if (vehicle === 'motorcycle' && spots[y][x] === 'R' || vehicle === 'motorcycle' && spots[y][x] === 'S' 
+  for (let y = 0; y < spots.length; y++) {
+    for (let x = 0; x < spots.length; x++) {
+      if (vehicle === 'regular' && spots[y][x] === 'R') {
+        coordinates = [x, y];
+        return coordinates;
+      } else if (vehicle === 'small' && spots[y][x] === 'R' || vehicle === 'small' && spots[y][x] === 'S') {
+        coordinates = [x, y];
+        return coordinates;
+      } else if (vehicle === 'motorcycle' && spots[y][x] === 'R' || vehicle === 'motorcycle' && spots[y][x] === 'S'
           || vehicle === 'motorcycle' && spots[y][x] === 'M') {
-            coordinates = [x, y];
-            return coordinates;
-          } 
+        coordinates = [x, y];
+        return coordinates;
       }
     }
+  }
   if (coordinates.length !== 2) {
     return false;
   }
@@ -57,4 +57,4 @@ console.log(whereCanIPark(
     ['S', 'r', 'S', 'M', 'm', 'S']
   ],
   'motorcycle'
-))
+));

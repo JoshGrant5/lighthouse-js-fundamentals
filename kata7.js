@@ -1,6 +1,6 @@
 // Check collection of air samples (array of strings with clean or dirty air, highest acceptable amount of dirty samples)
 // Threshold of o.4 means there must be less than 40% of total samples dirty for air to be considered clean
-const checkAir = function (samples, threshold) {
+const checkAir = function(samples, threshold) {
   let dirty = 0; // placeholder for number of dirty samples
   for (let test of samples) {
     if (test === 'dirty') {
@@ -28,4 +28,4 @@ console.log(checkAir(
 console.log(checkAir(
   ['clean', 'dirty', 'clean', 'dirty', 'clean', 'dirty', 'clean'],
   0.9
-))
+));

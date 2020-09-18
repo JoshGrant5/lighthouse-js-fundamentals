@@ -6,7 +6,7 @@ const instructorWithLongestName = function(instructors) {
     if (id["name"].length > letters) {
       letters = id["name"].length;
       longest = id;
-    } 
+    }
   }
   return longest;
 };
